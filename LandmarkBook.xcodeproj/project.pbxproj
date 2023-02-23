@@ -13,6 +13,7 @@
 		D8F46F2C29A7751000EC4DE5 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F46F2A29A7751000EC4DE5 /* Main.storyboard */; };
 		D8F46F2E29A7751100EC4DE5 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D8F46F2D29A7751100EC4DE5 /* Assets.xcassets */; };
 		D8F46F3129A7751100EC4DE5 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D8F46F2F29A7751100EC4DE5 /* LaunchScreen.storyboard */; };
+		D8F46F3929A7B4C400EC4DE5 /* DetailVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = D8F46F3829A7B4C400EC4DE5 /* DetailVC.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		D8F46F2D29A7751100EC4DE5 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		D8F46F3029A7751100EC4DE5 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		D8F46F3229A7751100EC4DE5 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D8F46F3829A7B4C400EC4DE5 /* DetailVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailVC.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -59,6 +61,7 @@
 				D8F46F2429A7751000EC4DE5 /* AppDelegate.swift */,
 				D8F46F2629A7751000EC4DE5 /* SceneDelegate.swift */,
 				D8F46F2829A7751000EC4DE5 /* ViewController.swift */,
+				D8F46F3829A7B4C400EC4DE5 /* DetailVC.swift */,
 				D8F46F2A29A7751000EC4DE5 /* Main.storyboard */,
 				D8F46F2D29A7751100EC4DE5 /* Assets.xcassets */,
 				D8F46F2F29A7751100EC4DE5 /* LaunchScreen.storyboard */,
@@ -139,6 +142,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				D8F46F2929A7751000EC4DE5 /* ViewController.swift in Sources */,
+				D8F46F3929A7B4C400EC4DE5 /* DetailVC.swift in Sources */,
 				D8F46F2529A7751000EC4DE5 /* AppDelegate.swift in Sources */,
 				D8F46F2729A7751000EC4DE5 /* SceneDelegate.swift in Sources */,
 			);
