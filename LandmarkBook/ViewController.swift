@@ -10,24 +10,41 @@ import UIKit
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
 
     @IBOutlet weak var tableView: UITableView!
+    var landmarkImages = [UIImage]()
+    var landmarkNames = [String]()
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         tableView.delegate = self
         tableView.dataSource = self
+        
+        
+        landmarkNames.append("colosseum")
+        landmarkNames.append("greatwallofchina")
+        landmarkNames.append("kremlin")
+        landmarkNames.append("stonehenge")
+        landmarkNames.append("tajmahal")
+        
+        landmarkImages.append(UIImage(named: "colosseum")!)
+        landmarkImages.append(UIImage(named: "greatwallofchina")!)
+        landmarkImages.append(UIImage(named: "kremlin")!)
+        landmarkImages.append(UIImage(named: "stonehenge")!)
+        landmarkImages.append(UIImage(named: "tajmahal")!)
     }
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 30
+        return landmarkNames.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = UITableViewCell()
         //cell.textLabel?.text = "test"
         var content = cell.defaultContentConfiguration()
-        content.text = "TableView"
-        content.secondaryText = "test"
+        content.text = landmarkNames[indexPath.row]
+        //content.image = landmarkImages[indexPath.row]
+        //content.secondaryText = "test"
         cell.contentConfiguration = content
         return cell
     }
